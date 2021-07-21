@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
         int startAmount = 100;
-        int depositAmount = 2500;
+        int depositAmount = 2000;
 
-        int bonus = depositAmount / 100;
-        int totalAmount = bonus + startAmount + depositAmount;
+        int bonus=0;
+
         if (depositAmount > 1000) {
-            System.out.println(bonus);
-            System.out.println(totalAmount);
-        } else{
-            System.out.println(totalAmount);
-        }
-        }
+            bonus = depositAmount / 100;
+        }else{}
+        int totalAmount = bonus + startAmount + depositAmount;
+        System.out.println(bonus);
+        System.out.println(totalAmount);
+    }
 }
 
